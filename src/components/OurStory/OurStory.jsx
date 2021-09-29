@@ -145,6 +145,90 @@ const OurStory = () => {
 
             </div>
 
+            <div className="black-box">
+              <div className="black-box-one">
+                  <div className="black-box-one-left">Over 100 <br/>million<br/> readers and<br/> growing.</div>
+                  <div className="black-box-one-right">
+                    <div className="black-box-one-right-image">
+                      <div>
+                        <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/About_Bina-1.png" />
+                      </div>
+                      <div className="black-box-one-right-image-two"></div>
+                       <div className="black-box-one-right-image-three"></div>
+                    </div>
+                    <div className="black-box-one-right-content">
+                      “There’s no ther place that combines such an excellent level of writing with a truly engaged and active community. Medium is truly where ideas are born, shared and spread.”
+                    </div>
+                    <div className="black-box-one-right-name">
+                      Jasmine Alladin
+                    </div>
+                  </div>
+              </div>
+
+              <div className="black-box-hr"></div>
+            
+              <div className="black-box-two">
+                <div className="black-box-two-title">
+                  Create the space for your thinking to take off.
+                </div>
+                <div className="black-box-two-content">
+                  A blank page is also a door. At Medium you can walk through it. It's easy and free to share your thinking on any topic, connect with an audience, express yourself with a range of publishing tools, and even earn money for your work.
+                </div>
+                <div className="black-box-two-button">
+                  <div>Write on Medium</div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div className="green-box">
+
+              <div className="green-box-one">
+                <div className="green-box-one-title">
+                  Get more with membership.
+                </div>
+                <div className="green-box-one-content">
+                  Become a Medium member to enjoy unlimited access for $5/month and directly support the writers you read most.
+                </div>
+                <div className="green-box-one-button">
+                  <div>See membership options</div>
+                </div>
+              </div>
+
+              <div className="green-box-hr"></div>
+
+                 <div className="green-box-two">
+                  <div className="green-box-two-left">
+                    <div className="green-box-two-left-title">Read as much as you want.</div>
+                    <div className="green-box-two-left-image">
+                      <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/UnlimitedReading.svg"/>
+                    </div>
+                    <div className="green-box-two-left-bottom">Enjoy unlimited access to every story across all of your devices.</div>
+                  </div>
+                  
+                  <div className="green-box-two-right">
+                    <div className="green-box-two-left-title">Reward quality content.</div>
+                    <div className="green-box-two-left-image">
+                      <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/SupportWriters.svg"/>
+                    </div>
+                    <div className="green-box-two-left-bottom">Your membership helps us pay writers, and keeps your experience ad - free</div>
+                  </div>
+              </div>
+              
+            </div>
+
+          <div className="light-green-box">
+              <div className="light-green-box-inner">
+                  <div className="light-green-box-inner-left">
+                      <div className="light-green-box-inner-left"></div>
+                  </div>
+                 
+                  <div className="light-green-box-inner-left">
+
+                  </div>
+              </div>
+          </div>
             
 
           
