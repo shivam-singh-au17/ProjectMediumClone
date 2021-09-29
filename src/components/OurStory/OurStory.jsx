@@ -221,11 +221,46 @@ const OurStory = () => {
           <div className="light-green-box">
               <div className="light-green-box-inner">
                   <div className="light-green-box-inner-left">
-                      <div className="light-green-box-inner-left"></div>
+                      <div className="light-green-box-inner-left-title">Take Medium with you.</div>
+                      <div className="light-green-box-inner-left-content">Download our app so you can read, write, and publish wherever you are.</div>
+                      <div className="light-green-box-inner-left-bottom">
+                          <div>
+                            <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/AppleStore_2x.png" />
+                          </div>
+                          <div>
+                            <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/PlayStore_2x.png" />
+                          </div>
+                      </div>
                   </div>
                  
-                  <div className="light-green-box-inner-left">
+                  <div className="light-green-box-inner-right">
+                        <div>
+                            <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/About_iPhone_screen-p-500.png" />
+                        </div>
+                  </div>
+              </div>
+          </div>
 
+          <div className="white-box-one">
+              <div className="white-box-one-inner">
+                  <div className="white-box-one-inner-left">
+                      Learn more about us. Or join us.
+                  </div>
+                  <div className="white-box-one-inner-right">
+                      <div>
+                          <div className="white-box-one-inner-right-title">The Medium blog</div>
+                          <div className="white-box-one-inner-right-content">Become a Medium member to enjoy unlimited access for $5/month and directly support the writers you read most.</div>
+                          <div className="white-box-one-inner-right-button">
+                              <div>Read our blog</div>
+                          </div>
+                      </div>
+                      <div>
+                          <div className="white-box-one-inner-right-title">The Medium blog</div>
+                          <div className="white-box-one-inner-right-content">Our team is home to engineers, journalists, artists, and creatives of all stripes.</div>
+                          <div className="white-box-one-inner-right-button" id="button1">
+                              <div>View open positions</div>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
