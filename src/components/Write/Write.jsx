@@ -2,11 +2,7 @@ import React from 'react'
 import "./Write.css"
 
 const Write = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <div>Write</div>;
 }
 
 export {Write}
