@@ -1,0 +1,98 @@
+.signup-box {
+  width: 650px;
+  height: 497px;
+  border-radius: 8px;
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  padding-top: 73px;
+}
+
+.signup-title {
+  width: 255px;
+  height: 32px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+
+  color: #292929;
+}
+
+.signup-google {
+  width: 221px;
+  height: 44px;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-google-text {
+  width: 170.3px;
+  height: 20px;
+
+  display: grid;
+  grid-template-columns: 12% 79%;
+  gap: 9%;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-google-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.signup-google-content {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #757575;
+}
+
+.signup-twitter {
+  width: 221px;
+  height: 44px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.signup-footer {
+  width: 490px;
+  height: 42px;
+  margin-left: auto;
+  margin-top: 61px;
+  margin-right: auto;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #757575;
+}
