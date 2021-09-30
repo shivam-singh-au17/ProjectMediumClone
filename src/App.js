@@ -1,14 +1,15 @@
+import React from 'react';
 import './App.css';
-import { OurStory } from './components/OurStory/OurStory';
-import { Write } from './components/Write/Write';
+import {Routes} from './components/Routes';
 
 function App() {
+
   return (
     <>
-      <OurStory/>
-     
+      <Routes/>
     </>
   );
 }
 
 export default App;
+
