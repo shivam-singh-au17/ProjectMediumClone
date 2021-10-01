@@ -67,8 +67,65 @@ export const Home_Signin = () => {
                         </div>
 
                         <div className="home-inner-right-ten">
-                            <div></div>
-                            <div></div>
+                            <div className="home-inner-right-ten-image">
+                                <img src="https://miro.medium.com/fit/c/60/60/1*MqpYUlbbpQEVjqfYlzf7Wg.jpeg" />
+                            </div>
+                            <div className="home-inner-right-ten-right">
+                                <div className="home-inner-right-ten-right-content">
+                                    <div className="home-inner-right-ten-right-content-top">Vivian Nunez</div>
+                                    <div className="home-inner-right-ten-right-content-bottom">Your creativity + mental wellness accountability</div>
+                                </div>
+                                <div className="home-inner-right-ten-right-button">
+                                    <div>Follow</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="home-inner-right-ten">
+                            <div className="home-inner-right-ten-image">
+                                <img src="https://miro.medium.com/fit/c/60/60/1*i97N8UJIUubPKMw6EvQLNw.jpeg" />
+                            </div>
+                            <div className="home-inner-right-ten-right">
+                                <div className="home-inner-right-ten-right-content">
+                                    <div className="home-inner-right-ten-right-content-top">Stefania Simon</div>
+                                    <div className="home-inner-right-ten-right-content-bottom">Passionate Web Developer & Designer writing about</div>
+                                </div>
+                                <div className="home-inner-right-ten-right-button">
+                                    <div>Follow</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="home-inner-right-ten">
+                            <div className="home-inner-right-ten-image">
+                                <img src="https://miro.medium.com/fit/c/60/60/1*Dg5Nl8BJYGqNAjxsoUwCng.jpeg" />
+                            </div>
+                            <div className="home-inner-right-ten-right">
+                                <div className="home-inner-right-ten-right-content">
+                                    <div className="home-inner-right-ten-right-content-top">Larry Kim</div>
+                                    <div className="home-inner-right-ten-right-content-bottom">Designer, writer, teacher. I love building things.</div>
+                                </div>
+                                <div className="home-inner-right-ten-right-button">
+                                    <div>Follow</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="home-inner-right-eleven">
+                            SUGGESTED READING
+                        </div>
+
+                        <div className="home-inner-right-twelve">
+                            <div className="home-inner-right-twelve-image">
+                                <img src="https://miro.medium.com/fit/c/40/40/1*bZX8Yl2oSaazykXsONbT0Q.jpeg" />
+                            </div>
+                            <div className="home-inner-right-twelve-text">
+                                Daniel Danielyan in UX Planet
+                            </div>
+                        </div>
+
+                        <div className="home-inner-right-thirteen">
+                            8 overlooked details by beginner UX Designers
                         </div>
 
                     </div>
