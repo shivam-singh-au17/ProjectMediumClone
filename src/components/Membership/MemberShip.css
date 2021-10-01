@@ -1,0 +1,96 @@
+.member {
+  width: 100%;
+}
+.m-first {
+  padding: 74px 10px 74px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #4479ff;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+.m-first h1 span {
+  font-family: Georgia;
+  font-size: 100px;
+  line-height: 110px;
+}
+.m-first-button {
+  margin: auto;
+  position: relative;
+  height: auto;
+  padding: 5px 32px 10px;
+  border-radius: 21px;
+  border: none;
+}
+.m-second {
+  color: white;
+  background-color: #4479ff;
+  padding: 40px;
+}
+.m-second-mid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.m-second-1 {
+  padding: 30px;
+  width: 50%;
+  border-right: 1px solid white;
+}
+.m-second-2 {
+  width: 50%;
+  padding: 30px;
+}
+
+.m-second-1 h1 span,
+.m-second-2 h1 span {
+  font-size: 3.2vw;
+  line-height: 50px;
+  font-family: Georgia;
+}
+
+.m-second-1 img,
+.m-second-2 img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.m-third {
+  padding: 74px 10px 74px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.m-third h1 span {
+  font-size: 46px;
+  line-height: 50px;
+  width: 567px;
+}
+.m-four {
+  border: 1px solid black;
+  padding-top: 40px;
+  background-color: #bcdfff;
+  text-align: center;
+  justify-content: center;
+}
+
+.m-four h1 span {
+  font-family: Georgia;
+  font-size: 100px;
+  line-height: 110px;
+  color: black;
+}
+.m-four button {
+  margin: auto;
+  position: relative;
+  height: auto;
+  padding: 7px 45px 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+}
