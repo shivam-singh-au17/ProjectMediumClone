@@ -8,41 +8,19 @@ import num03 from "../Image/num03.png";
 import num04 from "../Image/num04.png";
 import num05 from "../Image/num05.png";
 import num06 from "../Image/num06.png";
-import blogimg from "../Image/blogimg.jpeg";
+import { Link } from "react-router-dom";
 import axios from "axios";
-
-// const iniState = {
-//   name: "",
-//   email: "",
-//   age: "",
-//   address: "",
-//   salary: "",
-//   isMarried: false,
-//   contry: "",
-//   department: "",
-//   photo: "",
-// };
+import { useContext } from "react";
+import { ThemeContexts } from "../../Contexts/ThemeContexts";
 
 const Home = () => {
-  // const [data, setData] = useState(iniState);
-  const [isLoaging, setIsLoaging] = useState(false);
-  const [isError, setIsError] = useState(false);
   const [addTask, setAddTask] = useState([]);
+  const { handleChangeTheme } = useContext(ThemeContexts);
 
   function getMyTodos() {
-    setIsLoaging(true);
-    setIsError(false);
-    axios
-      .get(`http://localhost:5000/blogsdata/`)
-      .then((res) => {
-        setAddTask(res.data);
-      })
-      .catch((err) => {
-        setIsError(true);
-      })
-      .finally(() => {
-        setIsLoaging(false);
-      });
+    axios.get(`http://localhost:5000/blogsdata/`).then((res) => {
+      setAddTask(res.data);
+    });
   }
 
   useEffect(() => {
@@ -82,15 +60,20 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 0 ? (
                   <div className="colis10" key={e._id}>
-                    <div className="AuthInfo">
-                      <img className="numImg" src={e.userProPic} alt="" />
-                      <span className="authorName ms-2">{e.userName}</span>
-                      <span className="authorIn mx-1">in</span>
-                      <span className="authorDictp">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading">
-                      <p className="authorTitle">{e.userTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo">
+                        <img className="numImg" src={e.userProPic} alt="" />
+                        <span className="authorName ms-2">{e.userName}</span>
+                        <span className="authorIn mx-1">in</span>
+                        <span className="authorDictp">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading">
+                        <p className="authorTitle">{e.userTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -109,15 +92,20 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 1 ? (
                   <div className="colis10" key={e._id}>
-                    <div className="AuthInfo">
-                      <img className="numImg" src={e.userProPic} alt="" />
-                      <span className="authorName ms-2">{e.userName}</span>
-                      <span className="authorIn mx-1">in</span>
-                      <span className="authorDictp">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading">
-                      <p className="authorTitle">{e.userTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo">
+                        <img className="numImg" src={e.userProPic} alt="" />
+                        <span className="authorName ms-2">{e.userName}</span>
+                        <span className="authorIn mx-1">in</span>
+                        <span className="authorDictp">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading">
+                        <p className="authorTitle">{e.userTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -136,15 +124,20 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 2 ? (
                   <div className="colis10" key={e._id}>
-                    <div className="AuthInfo">
-                      <img className="numImg" src={e.userProPic} alt="" />
-                      <span className="authorName ms-2">{e.userName}</span>
-                      <span className="authorIn mx-1">in</span>
-                      <span className="authorDictp">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading">
-                      <p className="authorTitle">{e.userTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo">
+                        <img className="numImg" src={e.userProPic} alt="" />
+                        <span className="authorName ms-2">{e.userName}</span>
+                        <span className="authorIn mx-1">in</span>
+                        <span className="authorDictp">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading">
+                        <p className="authorTitle">{e.userTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -163,15 +156,20 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 3 ? (
                   <div className="colis10" key={e._id}>
-                    <div className="AuthInfo">
-                      <img className="numImg" src={e.userProPic} alt="" />
-                      <span className="authorName ms-2">{e.userName}</span>
-                      <span className="authorIn mx-1">in</span>
-                      <span className="authorDictp">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading">
-                      <p className="authorTitle">{e.userTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo">
+                        <img className="numImg" src={e.userProPic} alt="" />
+                        <span className="authorName ms-2">{e.userName}</span>
+                        <span className="authorIn mx-1">in</span>
+                        <span className="authorDictp">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading">
+                        <p className="authorTitle">{e.userTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -190,15 +188,20 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 4 ? (
                   <div className="colis10" key={e._id}>
-                    <div className="AuthInfo">
-                      <img className="numImg" src={e.userProPic} alt="" />
-                      <span className="authorName ms-2">{e.userName}</span>
-                      <span className="authorIn mx-1">in</span>
-                      <span className="authorDictp">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading">
-                      <p className="authorTitle">{e.userTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo">
+                        <img className="numImg" src={e.userProPic} alt="" />
+                        <span className="authorName ms-2">{e.userName}</span>
+                        <span className="authorIn mx-1">in</span>
+                        <span className="authorDictp">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading">
+                        <p className="authorTitle">{e.userTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -217,15 +220,20 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 5 ? (
                   <div className="colis10" key={e._id}>
-                    <div className="AuthInfo">
-                      <img className="numImg" src={e.userProPic} alt="" />
-                      <span className="authorName ms-2">{e.userName}</span>
-                      <span className="authorIn mx-1">in</span>
-                      <span className="authorDictp">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading">
-                      <p className="authorTitle">{e.userTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo">
+                        <img className="numImg" src={e.userProPic} alt="" />
+                        <span className="authorName ms-2">{e.userName}</span>
+                        <span className="authorIn mx-1">in</span>
+                        <span className="authorDictp">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading">
+                        <p className="authorTitle">{e.userTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -248,26 +256,31 @@ const Home = () => {
               return i >= 6 ? (
                 <div className="col4gy3row02" key={e._id}>
                   <div className="colis1002">
-                    <div className="AuthInfo02">
-                      <img
-                        className="numImg02"
-                        src={e.userProPic}
-                        alt="UserPic"
-                      />
-                      <span className="authorName02 ms-2">{e.userName}</span>
-                      <span className="authorIn02 mx-1">in</span>
-                      <span className="authorDictp02">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading02">
-                      <p className="authorTitle02">{e.userTitle}</p>
-                      <p className="authSubHed02">{e.userSubTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo02">
+                        <img
+                          className="numImg02"
+                          src={e.userProPic}
+                          alt="UserPic"
+                        />
+                        <span className="authorName02 ms-2">{e.userName}</span>
+                        <span className="authorIn02 mx-1">in</span>
+                        <span className="authorDictp02">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading02">
+                        <p className="authorTitle02">{e.userTitle}</p>
+                        <p className="authSubHed02">{e.userSubTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt02">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
                       <span className="mx-1">·</span>
                       <span className="mx-1">{e.userBlogTag}</span>
-                      <span className="ms-1">&#9733;</span>
+                      {/* <span className="ms-1">&#9733;</span> */}
                     </div>
                   </div>
                   <div className="colis202">
@@ -282,26 +295,31 @@ const Home = () => {
               return i <= 5 ? (
                 <div className="col4gy3row02" key={e._id}>
                   <div className="colis1002">
-                    <div className="AuthInfo02">
-                      <img
-                        className="numImg02"
-                        src={e.userProPic}
-                        alt="UserPic"
-                      />
-                      <span className="authorName02 ms-2">{e.userName}</span>
-                      <span className="authorIn02 mx-1">in</span>
-                      <span className="authorDictp02">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading02">
-                      <p className="authorTitle02">{e.userTitle}</p>
-                      <p className="authSubHed02">{e.userSubTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo02">
+                        <img
+                          className="numImg02"
+                          src={e.userProPic}
+                          alt="UserPic"
+                        />
+                        <span className="authorName02 ms-2">{e.userName}</span>
+                        <span className="authorIn02 mx-1">in</span>
+                        <span className="authorDictp02">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading02">
+                        <p className="authorTitle02">{e.userTitle}</p>
+                        <p className="authSubHed02">{e.userSubTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt02">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
                       <span className="mx-1">·</span>
                       <span className="mx-1">{e.userBlogTag}</span>
-                      <span className="ms-1">&#9733;</span>
+                      {/* <span className="ms-1">&#9733;</span> */}
                     </div>
                   </div>
                   <div className="colis202">
@@ -311,20 +329,25 @@ const Home = () => {
               ) : (
                 <div className="col4gy3row02" key={e._id}>
                   <div className="colis1002">
-                    <div className="AuthInfo02">
-                      <img
-                        className="numImg02"
-                        src={e.userProPic}
-                        alt="UserPic"
-                      />
-                      <span className="authorName02 ms-2">{e.userName}</span>
-                      <span className="authorIn02 mx-1">in</span>
-                      <span className="authorDictp02">{e.userSubName}</span>
-                    </div>
-                    <div className="authHeading02">
-                      <p className="authorTitle02">{e.userTitle}</p>
-                      <p className="authSubHed02">{e.userSubTitle}</p>
-                    </div>
+                    <Link onClick={() => handleChangeTheme(5)}
+                      style={{ textDecoration: "none" }}
+                      to={`/blog/${e._id}`}
+                    >
+                      <div className="AuthInfo02">
+                        <img
+                          className="numImg02"
+                          src={e.userProPic}
+                          alt="UserPic"
+                        />
+                        <span className="authorName02 ms-2">{e.userName}</span>
+                        <span className="authorIn02 mx-1">in</span>
+                        <span className="authorDictp02">{e.userSubName}</span>
+                      </div>
+                      <div className="authHeading02">
+                        <p className="authorTitle02">{e.userTitle}</p>
+                        <p className="authSubHed02">{e.userSubTitle}</p>
+                      </div>
+                    </Link>
                     <div className="authDaTiSt02">
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
@@ -376,4 +399,3 @@ const Home = () => {
 };
 
 export { Home };
-
