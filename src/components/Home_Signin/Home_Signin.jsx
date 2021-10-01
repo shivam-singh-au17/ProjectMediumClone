@@ -128,6 +128,27 @@ export const Home_Signin = () => {
                             8 overlooked details by beginner UX Designers
                         </div>
 
+                        <div className="home-inner-right-fourteen">
+                            December 24, 2020 . 5 min read
+                        </div>
+
+                         <div className="home-inner-right-fifteen">
+                            See your full reading list
+                        </div>
+
+                        <hr />
+
+                        <div className="home-inner-right-sixteen">
+                            <div>Help</div>
+                            <div>Status</div>
+                            <div>Writers</div>
+                            <div>Blog</div>
+                            <div>Careers</div>
+                            <div>Privacy</div>
+                            <div>Terms</div>
+                            <div>About</div>
+                        </div>
+
                     </div>
                 </div>
             </div>
