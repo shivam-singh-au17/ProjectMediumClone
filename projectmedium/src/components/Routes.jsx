@@ -4,13 +4,16 @@ import { NavBar } from "./NavBar/NavBar";
 import { Home } from "./Home/Home";
 import { Write } from "./Write/Write";
 import { OurStory } from "./OurStory/OurStory";
+import { ShowBlog } from "./ShowBlog/ShowBlog";
+import { Signup } from "./Signup/Signup";
+
 
 function Routes() {
   const myStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "90vh",
+    minHeight: "85vh",
   };
 
   return (
@@ -20,17 +23,20 @@ function Routes() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/ourstory">
+        <Route path="/blog/:userId" exact>
+          <ShowBlog />
+        </Route>
+        <Route path="/ourstory" exact>
           <OurStory />
         </Route>
-        <Route path="/membership">
+        <Route path="/membership" exact>
           <Home />
         </Route>
-        <Route path="/write">
+        <Route path="/write" exact>
           <Write />
         </Route>
-        <Route path="/login">
-          <Home />
+        <Route path="/login" exact>
+          <Signup />
         </Route>
         <Route>
           <div style={myStyle}>
