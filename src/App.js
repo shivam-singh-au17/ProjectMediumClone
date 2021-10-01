@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Home_Signin } from './components/Home_Signin/Home_Signin';
 import { OurStory } from './components/OurStory/OurStory';
 import { Signin } from './components/Signin/Signin';
 import { Signup } from './components/Signup/Signup';
@@ -10,8 +11,9 @@ function App() {
   return (
     <>
       {/* <OurStory/> */}
-     <Signup />
+     {/* <Signup /> */}
      {/* <Signin /> */}
+     <Home_Signin />
     </>
   );
 }
