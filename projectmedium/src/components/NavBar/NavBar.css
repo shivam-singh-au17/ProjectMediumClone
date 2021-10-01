@@ -1,21 +1,11 @@
 .navBarSection {
-  background: #c4e2ff;
   height: 88px;
   border-bottom: 1px solid black;
-  position: sticky;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
   top: 0px;
 }
-
-/* .navBarSection::before {
-  content: "";
-  background-color: #c4e2ff;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-} */
 
 .navBar {
   max-width: 90%;
@@ -61,6 +51,8 @@
 }
 
 .linktext {
+  font-weight: 500;
+  font-size: 16px;
   color: black;
   text-decoration: none;
 }
