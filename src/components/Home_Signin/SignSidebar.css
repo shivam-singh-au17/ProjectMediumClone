@@ -1,6 +1,7 @@
 .home-inner-right {
   display: flex;
   flex-direction: column;
+  position: sticky;
 }
 .home-inner-right-icon {
   width: 132.4px;
@@ -338,7 +339,7 @@
 
   color: #1a8917;
 }
-hr {
+.right-sidebar {
   margin-top: 40px;
   width: 100%;
   border: 1px solid #e6e6e6;

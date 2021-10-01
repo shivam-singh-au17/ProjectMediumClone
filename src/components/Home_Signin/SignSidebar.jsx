@@ -131,7 +131,7 @@ export const SignSidebar = () => {
                             See your full reading list
                         </div>
 
-                        <hr />
+                        <hr className="right-sidebar"/>
 
                         <div className="home-inner-right-sixteen">
                             <div>Help</div>
