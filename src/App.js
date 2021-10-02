@@ -1,5 +1,6 @@
 import "./App.css";
-import { MemberShip } from "./components/Membership/MemberShip";
+// import { MemberShip } from "./components/Membership/MemberShip";
+import { StoryPre } from "./components/StoryPreview/StoryPre";
 // import { OurStory } from "./components/OurStory/OurStory";
 // import { Write } from "./components/Write/Write";
 
@@ -8,7 +9,8 @@ function App() {
     <>
       {/* <OurStory/> */}
       {/* <Write /> */}
-      <MemberShip />
+      <StoryPre />
+      {/* <MemberShip /> */}
     </>
   );
 }
