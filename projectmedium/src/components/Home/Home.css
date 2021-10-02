@@ -261,8 +261,6 @@
 .allspanTag {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  left: -8px;
 }
 
 .allspanTag span {
@@ -274,6 +272,13 @@
   cursor: pointer;
   padding: 6px 18px;
   font-size: 16px;
+}
+
+.userBlogTag {
+  background: #ebe9e9;
+  border-radius: 18px;
+  cursor: pointer;
+  padding: 6px 18px;
 }
 
 .allTopics {
