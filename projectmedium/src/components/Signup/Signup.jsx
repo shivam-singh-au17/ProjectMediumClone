@@ -81,6 +81,6 @@ export const Signup = () => {
       </div>
     </div>
   ) : (
-    <Redirect to="/" />
+    <Redirect to="/home" />
   );
 };
