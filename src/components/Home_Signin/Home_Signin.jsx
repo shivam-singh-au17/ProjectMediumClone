@@ -1,8 +1,11 @@
 import React from 'react';
 import './Home_Signin.css'
-import { Leftbar } from './Leftbar';
+import { Trending } from './Trending';
+import {Following } from './Following';
+import {Recommended} from './Recommended';
 import { SignNav } from './SignNav';
 import { SignSidebar } from './SignSidebar';
+import {Link, Route, Switch} from 'react-router-dom';
 
 export const Home_Signin = () => {
     return (
@@ -27,15 +30,23 @@ export const Home_Signin = () => {
                         </div>
 
                         <div className="home-inner-left-two">
-                            <div><div>FOLLOWING</div></div>
-                            <div><div>TRENDING</div></div>
-                            <div><div>RECOMMENDED FOR YOU</div></div>
+                            <div><div><Link style={{textDecoration: 'none', color: "#757575"}} to="/following">FOLLOWING</Link></div></div>
+                            <div><div><Link style={{textDecoration: 'none', color: "#757575"}} to="/trending">TRENDING</Link></div></div>
+                            <div><div><Link style={{textDecoration: 'none', color: "#757575"}} to="/recommended">RECOMMENDED FOR YOU</Link></div></div>
                         </div>
 
                         <hr className="hr-left-sidebar"/>
-
-                        <Leftbar />
-
+                    <Switch>
+                        <Route path="/trending" exact>
+                            <Trending />
+                        </Route>
+                        <Route path="/following" exact>
+                            <Following />
+                        </Route>
+                        <Route path="/recommended" exact>
+                            <Recommended />
+                        </Route>
+                    </Switch>
                     </div>
                     <SignSidebar />
                 </div>

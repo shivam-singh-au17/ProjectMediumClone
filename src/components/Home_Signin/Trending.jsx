@@ -1,11 +1,11 @@
 import React from 'react';
-import './Leftbar.css';
+import './Trending.css';
 
-export const Leftbar = () => {
+export const Trending = () => {
     return (
         <div>
             <div className="home-inner-left-three">
-                Add data
+                Add Trending
             </div>
         </div>
     )
