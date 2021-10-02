@@ -1,0 +1,11 @@
+.saved-top,
+.saved-bottom {
+  width: 611px;
+  height: 163px;
+  border: 1px solid black;
+  margin-top: 31px;
+}
+.saved-top {
+  background: #1a8917;
+  border-radius: 5px;
+}

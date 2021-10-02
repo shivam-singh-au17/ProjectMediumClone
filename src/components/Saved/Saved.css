@@ -1,0 +1,54 @@
+.saved-body {
+  width: 42.4%;
+  height: 487px;
+  margin-top: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.saved-list {
+  width: 126px;
+  height: 32px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+
+  color: #292929;
+}
+
+.saved-button {
+  width: 250px;
+  height: 18px;
+  display: grid;
+  grid-template-columns: 18.4% 27.4% 48.4%;
+  gap: 3.8%;
+  margin-top: 26px;
+}
+
+.saved-button > div {
+  display: flex;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+
+  text-decoration: none;
+}
+
+.saved-button > div:hover {
+  border-bottom: 2px solid #524e4e;
+  color: #524e4e !important;
+  cursor: pointer;
+}
+.saved-hr {
+  width: 100%;
+  border: 2px solid #e6e6e6;
+  margin-top: 0px;
+}
