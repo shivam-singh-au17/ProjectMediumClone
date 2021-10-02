@@ -1,6 +1,7 @@
 import React from "react";
 import "./Write.css";
 import face from "./image/face.png";
+import SimpleAccordion from "./up";
 
 const Write = () => {
   return (
@@ -34,13 +35,7 @@ const Write = () => {
           <div className="col">
             <div className="img-left-first">
               {" "}
-              <img
-                src={face}
-                alt="Eroor"
-
-                width="400px"
-                height="550px"
-              />
+              <img src={face} alt="" srcset="" width="400px" height="550px" />
             </div>
           </div>
         </div>
@@ -204,7 +199,8 @@ const Write = () => {
         <div className="third-right">
           <img
             src="https://cdn-static-1.medium.com/sites/medium.com/creators/images/earn_kelly_kaki.png"
-            alt="Eroor"
+            alt=""
+            srcset=""
             width="600px"
             height="550px"
           />
@@ -260,8 +256,166 @@ const Write = () => {
       </div>
 
       {/* six */}
+
+      <div className="six-div">
+        <div style={{ padding: "30px 30px 0px" }}>
+          <h1>
+            {" "}
+            <span>Audience insights.</span>{" "}
+          </h1>
+          <p>
+            Use data to learn what resonates with your readers so you can keep
+            growing.
+          </p>
+          <div className="six-img">
+            {" "}
+            <img
+              src="https://cdn-static-1.medium.com/sites/medium.com/creators/images/creator-find-points-iphones.png"
+              alt=""
+              width="335px"
+              height="250px"
+            />
+          </div>
+        </div>
+        <div className="six-div-right">
+          <div className="six-div-right-top">
+            <div className="six-top-one">
+              {" "}
+              <h1>
+                {" "}
+                <span>Social connectivity.</span>{" "}
+              </h1>
+              <p>
+                Find people you’re already connected with on Twitter and easily
+                share your stories across platforms.
+              </p>
+            </div>
+            <div>
+              {" "}
+              <h1>
+                {" "}
+                <span>Powerful network.</span>{" "}
+              </h1>
+              <p>
+                Readers can discover and follow you easily with tailored feeds
+                and recommendations.
+              </p>
+            </div>
+          </div>
+          <div className="six-div-right-bottom">
+            <div>
+              {" "}
+              <h1>
+                {" "}
+                <span>Email subscriptions.</span>{" "}
+              </h1>
+              <p>
+                Reach readers by having your stories delivered straight to their
+                inboxes.
+              </p>
+            </div>
+            <div>
+              {" "}
+              <h1>
+                {" "}
+                <span>Interactive discussions.</span>{" "}
+              </h1>
+              <p>
+                Build relationships with your readers through a threaded
+                comments section.
+              </p>
+            </div>
+            <div>
+              {" "}
+              <h1>
+                {" "}
+                <span>Personalized design.</span>{" "}
+              </h1>
+              <p>
+                Easily customize your page to stand out and build your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* seven div */}
+      <div className="sev-div">
+        <h1>
+          <span>
+            {" "}
+            Earn money from <br />
+            your writing.
+          </span>{" "}
+        </h1>
+        <div className="sev-p">
+          {" "}
+          <p>
+            {" "}
+            Writing has its rewards when you join the Partner Program. Learn how
+            to get paid for the content you publish and the audiences you build.
+          </p>
+          <button className="button-second" style={{ border: "none" }}>
+            Learn more
+          </button>
+        </div>
+      </div>
+
+      <div className="last-div">
+        <div className="last-h">
+          <h1>More about writing on Medium: </h1>
+        </div>
+
+        <SimpleAccordion
+          head="How do I start writing on Medium?"
+          body="
+         First, make a free account. Then, to create a story, click on your profile picture in the top-right corner of the page, then “Write a Story.”"
+        />
+        <SimpleAccordion
+          head="Who writes on Medium?"
+          body="
+         Anyone can write on Medium. Whether you’ve never written before or are ready to create a full publication, it’s easy to get started and we allow you to focus more on big ideas and less on driving clicks. With the option to earn for your work, you can also be directly rewarded for the value you provide readers."
+        />
+        <SimpleAccordion
+          head="How can I make money writing on Medium?"
+          body="
+        If you join the Medium Partner Program, you can earn money based on how much time members spend reading your work and whenever you convert non-paying readers into members."
+        />
+        <SimpleAccordion
+          head="Do I need to be in the Partner Program to write on Medium?"
+          body="
+       No. You can write on Medium even if you are not in the Partner Program. If you are in the Partner Program you can also choose which of the stories you publish are eligible for the Program. For more about the Partner Program, click here."
+        />
+        <SimpleAccordion
+          head="Who can read the work I publish on Medium?"
+          body="
+       Anyone on the internet can read your stories. Even if your story is being distributed in the Partner Program as a part of our metered paywall, anyone can still read a limited number of articles for free each month. If you want to share an un-metered version of your story, you can use a Friend Link."
+        />
+        <SimpleAccordion
+          head="Where can I get updates and plug into the creator community?"
+          body="
+      For the latest guides, resources, and inspiration for creators on Medium, follow Creators Hub, the official Medium blog for writers."
+        />
+        <SimpleAccordion
+          head="How can I grow my audience with Medium?"
+          body="
+   Medium has a number of tools to connect you with over 100 million readers on the platform and beyond. Some ways you can build your audience are by starting a newsletter,  submitting to publications, following the distribution standards, and sharing your stories on social media. We also encourage you to check out our blog, 3 Minute Read, for more helpful tips and tricks – like how to write a great headline and SEO tips to make your stories more discoverable.  "
+        />
+
+        <div className="last-div-1">
+          <div className="last-div-2">
+            <span>Looking for help getting started?</span>
+
+            <button className="button-first-1" style={{ border: "none" }}>
+              Check out our guide
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export { Write };
+
+
+
