@@ -15,6 +15,8 @@ export default function Theme({ children }) {
       theme = "#c4e2ff";
     } else if (e === 2 || e === 5 || e === 6) {
       theme = "#FFFFFF";
+    } else if (e === 3) {
+      theme = "#4479FF";
     } else if (e === 4) {
       theme = "#F24D2E";
     } else {
