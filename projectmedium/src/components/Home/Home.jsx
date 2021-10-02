@@ -8,6 +8,7 @@ import num03 from "../Image/num03.png";
 import num04 from "../Image/num04.png";
 import num05 from "../Image/num05.png";
 import num06 from "../Image/num06.png";
+import save from "../Image/save.svg";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useContext } from "react";
@@ -60,7 +61,8 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 0 ? (
                   <div className="colis10" key={e._id}>
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -92,7 +94,8 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 1 ? (
                   <div className="colis10" key={e._id}>
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -124,7 +127,8 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 2 ? (
                   <div className="colis10" key={e._id}>
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -156,7 +160,8 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 3 ? (
                   <div className="colis10" key={e._id}>
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -188,7 +193,8 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 4 ? (
                   <div className="colis10" key={e._id}>
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -220,7 +226,8 @@ const Home = () => {
               {addTask.map((e, i) => {
                 return i === 5 ? (
                   <div className="colis10" key={e._id}>
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -256,7 +263,8 @@ const Home = () => {
               return i >= 6 ? (
                 <div className="col4gy3row02" key={e._id}>
                   <div className="colis1002">
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -279,8 +287,11 @@ const Home = () => {
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
                       <span className="mx-1">·</span>
-                      <span className="mx-1">{e.userBlogTag}</span>
-                      {/* <span className="ms-1">&#9733;</span> */}
+                      <span className="mx-1 userBlogTag">{e.userBlogTag}</span>
+                      <span className="ms-1">&#9733;</span>
+                      <span style={{ float: "right" }} className="me-4">
+                        <img src={save} alt="" />
+                      </span>
                     </div>
                   </div>
                   <div className="colis202">
@@ -295,7 +306,8 @@ const Home = () => {
               return i <= 5 ? (
                 <div className="col4gy3row02" key={e._id}>
                   <div className="colis1002">
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -318,8 +330,11 @@ const Home = () => {
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
                       <span className="mx-1">·</span>
-                      <span className="mx-1">{e.userBlogTag}</span>
-                      {/* <span className="ms-1">&#9733;</span> */}
+                      <span className="mx-1 userBlogTag">{e.userBlogTag}</span>
+                      <span className="ms-1">&#9733;</span>
+                      <span style={{ float: "right" }} className="me-4">
+                        <img src={save} alt="" />
+                      </span>
                     </div>
                   </div>
                   <div className="colis202">
@@ -329,7 +344,8 @@ const Home = () => {
               ) : (
                 <div className="col4gy3row02" key={e._id}>
                   <div className="colis1002">
-                    <Link onClick={() => handleChangeTheme(5)}
+                    <Link
+                      onClick={() => handleChangeTheme(5)}
                       style={{ textDecoration: "none" }}
                       to={`/blog/${e._id}`}
                     >
@@ -352,8 +368,11 @@ const Home = () => {
                       <span>{e.userBlogDate} ·</span>
                       <span className="mx-1">{e.userBlogTime}</span>
                       <span className="mx-1">·</span>
-                      <span className="mx-1">{e.userBlogTag}</span>
+                      <span className="mx-1 userBlogTag">{e.userBlogTag}</span>
                       <span className="ms-1">&#9733;</span>
+                      <span style={{ float: "right" }} className="me-4">
+                        <img src={save} alt="" />
+                      </span>
                     </div>
                   </div>
                   <div className="colis202">
