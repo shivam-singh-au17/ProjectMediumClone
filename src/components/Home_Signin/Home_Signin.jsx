@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home_Signin.css'
+import { Leftbar } from './Leftbar';
 import { SignNav } from './SignNav';
 import { SignSidebar } from './SignSidebar';
 
@@ -32,6 +33,8 @@ export const Home_Signin = () => {
                         </div>
 
                         <hr className="hr-left-sidebar"/>
+
+                        <Leftbar />
 
                     </div>
                     <SignSidebar />
