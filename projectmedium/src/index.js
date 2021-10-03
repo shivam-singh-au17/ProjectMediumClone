@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Theme from './Contexts/ThemeContexts';
+import { ProfileContext } from './Contexts/ProfileContext';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Theme >
-        <App />
+        <ProfileContext>
+          <App />
+        </ProfileContext>
       </Theme >
     </BrowserRouter>
   </React.StrictMode>,

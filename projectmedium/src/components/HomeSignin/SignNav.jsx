@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./SignNav.css";
 import logo from "../Image/logo.svg";
 import save from "./images/Vector.jpg";
@@ -6,6 +6,7 @@ import ringing from "./images/bell.png";
 import search from "./images/search.png";
 import addPlus from "./images/add.png";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../Contexts/ProfileContext";
 
 const links = [
   {
@@ -23,6 +24,9 @@ const links = [
 ];
 
 export const SignNav = () => {
+
+  const {name, profileimage, email} = useContext(AppContext)
+
   return (
     <div className="navbar">
       <div className="navbar-inner">
@@ -110,7 +114,7 @@ export const SignNav = () => {
             >
               <img
                 className="profile"
-                src="https://cdn-images-1.medium.com/fit/c/35/35/0*EWs9dkB9i9yar9-3"
+                src={profileimage}
                 alt=""
               />
             </span>
@@ -126,12 +130,12 @@ export const SignNav = () => {
                 <div id="offcanvasRightLabel" className="d-flex p-1">
                   <img
                     className="profile myImg"
-                    src="https://cdn-images-1.medium.com/fit/c/35/35/0*EWs9dkB9i9yar9-3"
+                    src={profileimage}
                     alt=""
                   />
                   <div className="ms-3">
-                    <div className="fs-5">Shivam Singh</div>
-                    <div className="">@shivamsingh4458</div>
+                    <div className="fs-5">{name}</div>
+                    <div className="">{email}</div>
                   </div>
                 </div>
                 <button

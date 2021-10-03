@@ -7,16 +7,19 @@ import plus2 from "../Image/plus2.png";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContexts } from "../../Contexts/ThemeContexts";
+import { AppContext } from "../../Contexts/ProfileContext";
 
 
 export const Signup = () => {
   const [isAuth, setIsAuth] = React.useState(true);
   const { handleChangeTheme } = useContext(ThemeContexts);
+  const {handleLogin} = useContext(AppContext)
 
   const responseGoogle = (response) => {
     console.log(response);
     var res = response.profileObj;
     console.log(res);
+    handleLogin(res);
     setIsAuth(false);
   };
   return isAuth ? (
