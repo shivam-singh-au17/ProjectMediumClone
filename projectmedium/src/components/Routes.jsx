@@ -12,9 +12,7 @@ import "./Routes.css";
 import AddData from "./AddData/AddData";
 import { MemberShip } from "./Membership/MemberShip";
 import { StoryPre } from "./StoryPreview/StoryPre";
-// import { Trending } from './HomeSignin/Trending';
-// import {Following } from './HomeSignin/Following';
-// import {Recommended} from './HomeSignin/Recommended';
+import { Saved } from "./Saved/Saved";
 
 function Routes() {
   return (
@@ -25,7 +23,6 @@ function Routes() {
           <Home />
         </Route>
         <Route path="/blog/:userId" exact>
-          <NavBar />
           <ShowBlog />
         </Route>
         <Route path="/ourstory" exact>
@@ -33,7 +30,6 @@ function Routes() {
           <OurStory />
         </Route>
         <Route path="/membership" exact>
-          <NavBar />
           <MemberShip />
         </Route>
         <Route path="/write" exact>
@@ -41,7 +37,6 @@ function Routes() {
           <Write />
         </Route>
         <Route path="/login" exact>
-          <NavBar />
           <Signup />
         </Route>
         <Route path="/home" exact>
@@ -53,17 +48,9 @@ function Routes() {
         <Route path="/home/edit/create" exact>
           <StoryPre />
         </Route>
-
-        {/* <Route path="/home/following" exact>
-          <Trending />
+        <Route path="/home/list" exact>
+          <Saved/>
         </Route>
-        <Route path="/home/trending" exact>
-          <Following />
-        </Route>
-        <Route path="/home/recommended" exact>
-          <Recommended />
-        </Route> */}
-
         <Route>
           <div className="showError">
             <div className="errorSection">
