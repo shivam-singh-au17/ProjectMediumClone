@@ -1,0 +1,44 @@
+.showError {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 128px;
+}
+
+.errorSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftErrorImg {
+  width: 45%;
+}
+
+.leftErrorImg img {
+  width: 100%;
+}
+
+.rightRror {
+  width: 45%;
+}
+
+.pageNotFound {
+  font-size: 25px;
+}
+
+.notFound {
+  font-size: 159px;
+  line-height: 120px;
+  color: rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.3);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.notFoundTxt {
+  font-size: 109px;
+  line-height: 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.errorpTag {
+  font-size: 20px;
+}

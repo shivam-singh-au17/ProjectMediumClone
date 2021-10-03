@@ -1,0 +1,306 @@
+.homeContainer {
+  background: #c4e2ff;
+  height: 430px;
+  border-bottom: 1px solid black;
+  margin-top: 88px;
+}
+
+.homeSection {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.leftHomeSec {
+  position: relative;
+  top: 40px;
+  width: 65%;
+}
+
+.rightHomeSec {
+  position: relative;
+  top: 71px;
+  width: 35%;
+}
+
+.headingName {
+  width: 70%;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 75px;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.headingTitle {
+  width: 60%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.homeBtn {
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 31px;
+  width: 20%;
+  text-align: center;
+}
+
+.homeBtn span {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.trendingSection {
+  height: 420px;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.trendingPart {
+  max-width: 90%;
+  margin: auto;
+  padding-top: 45px;
+}
+
+.myRowFlex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 33px;
+  margin-top: 25px;
+}
+
+.col4gy3row {
+  display: flex;
+}
+
+.colis2 {
+  position: relative;
+  top: -5px;
+}
+
+.colis10 {
+  padding: 0px 15px;
+}
+
+.numImg {
+  border-radius: 5px;
+  width: 8%;
+}
+
+.authorName {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.authorIn {
+  color: #757575;
+}
+
+.authorDictp {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.authHeading {
+  margin-top: 10px;
+}
+
+.authorTitle {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.authDaTiSt {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #757575;
+}
+
+.blogSection {
+  max-width: 92%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.allBlogs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftBlogSection {
+  width: 60%;
+}
+
+.rightBlogSection {
+  width: 33%;
+  display: block;
+}
+
+.allBlogTypes {
+  position: sticky;
+  z-index: 5;
+  display: block;
+  top: 115px;
+}
+
+.col4gy3row02 {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.colis1002 {
+  padding: 0px 15px;
+}
+
+.numImg02 {
+  border-radius: 5px;
+  width: 5%;
+}
+
+.colis202 img {
+  width: 220px;
+  height: 160px;
+}
+
+.authorName02 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.authorIn02 {
+  color: #757575;
+  font-size: 15px;
+}
+
+.authorDictp02 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.authHeading02 {
+  margin-top: 10px;
+}
+
+.authorTitle02 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  width: 90%;
+}
+
+.authSubHed02 {
+  width: 90%;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  top: -10px;
+  letter-spacing: -0.02em;
+  color: #757575;
+}
+
+.authDaTiSt02 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #757575;
+  position: relative;
+  top: -15px;
+  right: 0px;
+}
+
+.allspanTag {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.allspanTag span {
+  margin: 5px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #757575;
+  background: #e6e6e6;
+  border-radius: 18px;
+  cursor: pointer;
+  padding: 6px 18px;
+  font-size: 16px;
+}
+
+.userBlogTag {
+  background: #ebe9e9;
+  border-radius: 18px;
+  cursor: pointer;
+  padding: 6px 18px;
+}
+
+.allTopics {
+  margin: 15px 0px;
+  color: #1a8917;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.allspanTag2 {
+  border-top: 1px solid rgb(202, 202, 202);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.allspanTag2 span {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #757575;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 0px;
+  padding-right: 25px;
+  font-size: 16px;
+}

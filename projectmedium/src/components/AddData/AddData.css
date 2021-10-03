@@ -1,0 +1,214 @@
+.writeStorySection {
+  max-width: 85%;
+  margin: auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.storyNavBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more {
+  width: 25px;
+}
+
+.ringing {
+  width: 25px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.leftSection {
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(51, 51, 51);
+}
+
+.myImg {
+  position: relative;
+  top: 10px;
+}
+
+.publishBtn {
+  background-color: #1a8917;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.addYoursTORY {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.addImgVid {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 23px;
+  margin-right: 10px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.tellStory {
+  width: 100%;
+  height: 65px;
+  padding: 15px;
+  font-size: 2.5rem;
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  border: none;
+  border-left: 1px solid rgb(100, 100, 100);
+  outline: none;
+}
+
+::placeholder {
+  color: #b3b3b1;
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+}
+
+.addYoursTORY2 {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.addImgVid2 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.tellStory2 {
+  width: 100%;
+  height: 55px;
+  padding: 15px;
+  font-size: 2rem;
+  border: none;
+  border-left: 1px solid rgb(100, 100, 100);
+  outline: none;
+}
+
+.addYoursTORY3 {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.addImgVid3 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.addImgVid7 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tellStory3 {
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 1.5rem;
+  border: none;
+  border-left: 1px solid rgb(100, 100, 100);
+  outline: none;
+}
+
+.addYoursTORY4 {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.addImgVid4 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.tellStory4 {
+  height: 50px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.addPoster {
+  color: #b3b3b1;
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.myPosterImgFile {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.myPosterImgFile img {
+  max-width: 90%;
+}
+
+.mySubmitBtn {
+  float: right;
+  background-color: #1a8917;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-right: 120px;
+}
