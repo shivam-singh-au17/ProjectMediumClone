@@ -86,11 +86,13 @@ export default class AddData extends Component {
         <form onSubmit={this.onSubmit}>
           <div className="writeStorySection">
             <div className="storyNavBar py-3">
-              <div className="leftSection">
-                <img src={logo} alt="" />
-                <span className="ms-2">Draft in </span>
-                <span>Shivam Singh</span>
-              </div>
+              <Link to={`/home`} style={{ textDecoration: "none" }}>
+                <div className="leftSection">
+                  <img src={logo} alt="" />
+                  <span className="ms-2">Draft in </span>
+                  <span>Shivam Singh</span>
+                </div>
+              </Link>
               <div>
                 <Link
                   style={{ textDecoration: "none" }}
@@ -171,7 +173,71 @@ export default class AddData extends Component {
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div className="offcanvas-body">...</div>
+
+                  <div className="offcanvas-body myOptionsSec">
+                    <div className="LinkOneBox">
+                      <div className="myAllLinkOpt" id="myFirst">
+                        <Link className="myLinkOne" to={`/home/edit`}>
+                          Write a story
+                        </Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">Stories</Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">Stats</Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">Design your profile</Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">Settings</Link>
+                      </div>
+                    </div>
+                    <div className="LinkOneBox">
+                      <div className="myAllLinkOpt" id="myFirst2">
+                        <Link className="myLinkOne">Lists</Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">Publications</Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">
+                          Control your recommendations
+                        </Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">
+                          Medium Partner Program
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="LinkOneBox">
+                      <div className="myAllLinkOpt" id="myFirst2">
+                        <Link className="myLinkOne memberBtn">
+                          Become a member
+                        </Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne">Help</Link>
+                      </div>
+                      <div className="myAllLinkOpt">
+                        <Link className="myLinkOne" to={`/`}>
+                          Sign out
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="LinkOneBox">
+                      <div className="myFlexBoxLink">
+                        <div className="myAllLinkOpt" id="myFirst2">
+                          <Link className="myLinkOne">Privacy</Link>
+                        </div>
+                        <div className="myAllLinkOpt ms-3">
+                          <Link className="myLinkOne footerLink">Terms</Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
