@@ -27,6 +27,11 @@
   display: flex;
   flex-direction: row;
 }
+
+.story-left-b p {
+  position: relative;
+  top: 5px;
+}
 .story-left-b button {
   height: 37px;
   border-radius: 25px;
@@ -50,4 +55,8 @@
 .close-div {
   display: flex;
   justify-content: flex-end;
+}
+
+::placeholder {
+  font-size: 18px;
 }
