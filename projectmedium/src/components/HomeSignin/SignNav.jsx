@@ -1,8 +1,8 @@
 import React from "react";
 import "./SignNav.css";
 import logo from "../Image/logo.svg";
-import save from "../Image/save.png";
-import ringing from "../Image/ringing.png";
+import save from "./images/Vector.jpg";
+import ringing from "./images/bell.png";
 import search from "../Image/search.png";
 import addPlus from "../Image/addPlus.png";
 import { Link } from "react-router-dom";
