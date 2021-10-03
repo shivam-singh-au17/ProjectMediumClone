@@ -19,9 +19,7 @@ export default function Theme({ children }) {
       theme = "#4479FF";
     } else if (e === 4) {
       theme = "#F24D2E";
-    } else {
-      theme = "#c4e2ff";
-    }
+    } 
     setTheme(theme);
   };
   return (

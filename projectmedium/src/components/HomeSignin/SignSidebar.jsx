@@ -4,7 +4,7 @@ import './SignSidebar.css'
 export const SignSidebar = () => {
     return (
       <div className="displayblo">
-        <div className="home-inner-right mystiky">
+        <div className="home-inner-right mystiky mb-4">
           <div className="home-inner-right-icon">
             <div className="home-inner-right-icon-medium">
               <img

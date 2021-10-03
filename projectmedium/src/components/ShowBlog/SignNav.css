@@ -1,11 +1,12 @@
-.navbar {
+.navbar22 {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background: #ffffff;
   box-shadow: 0px 4px 25px #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid rgb(146, 146, 146);
 }
 .navbar-inner {
   width: 90%;
@@ -30,15 +31,16 @@
   height: 100%;
 }
 .navbar-inner-left-text {
-  font-family: Georgia;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 36px;
   line-height: 48px;
   position: relative;
   bottom: 2px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.06em;
   color: #000000;
+  width: 300px;
 }
 .navbar-inner-right {
   display: grid;

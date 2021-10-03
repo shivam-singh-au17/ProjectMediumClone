@@ -24,7 +24,7 @@ const links = [
   },
   {
     to: "/login",
-    title: "Sign in / Sign up",
+    title: "Sign in/Sign up",
   },
 ];
 
@@ -33,7 +33,7 @@ function NavBar() {
 
   return (
     <>
-      <div className="navBarSection" style={{ backgroundColor: `${theme}` }}>
+      <div className="navBarSection11" style={{ backgroundColor: `${theme}` }}>
         <div className="navBar">
           <div className="leftNavSec">
             <Link
@@ -74,13 +74,13 @@ function NavBar() {
               </Link>
             </span>
 
-            <span className="navSign">
+            <span className="navSign2">
               <Link
                 onClick={() => handleChangeTheme(6)}
                 className="linkunderline"
                 to={links[4].to}
               >
-                <span>{links[4].title}</span>
+                <span>Become a member</span>
               </Link>
             </span>
           </div>

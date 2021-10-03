@@ -40,9 +40,11 @@ const Home = () => {
               It's easy and free to post your thinking on any topic and connect
               with millions of readers.
             </p>
-            <div className="homeBtn">
-              <span>Start Writing</span>
-            </div>
+            <Link to={`/login`} style={{ textDecoration: "none" }}>
+              <div className="homeBtn">
+                <span>Start Writing</span>
+              </div>
+            </Link>
           </div>
           <div className="rightHomeSec">
             <img src={text} alt="text" />
