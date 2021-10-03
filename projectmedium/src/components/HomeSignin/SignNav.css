@@ -64,21 +64,19 @@
   height: 32px;
   font-family: Arial;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  /* identical to box height */
-
-  letter-spacing: -0.04em;
-
-  color: #757575;
+  letter-spacing: 0.5px;
+  color: #616161;
   background: #ffffff;
-  border: 1px solid #757575;
+  border: 1px solid #5e5e5e;
   box-sizing: border-box;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .navbar-inner-right-image > img {
   height: 36px;
