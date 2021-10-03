@@ -24,7 +24,7 @@ const links = [
   },
   {
     to: "/login",
-    title: "Sign in/Sign up",
+    title: "Sign in / Sign up",
   },
 ];
 
@@ -80,7 +80,7 @@ function NavBar() {
                 className="linkunderline"
                 to={links[4].to}
               >
-                <span>Sign in /Sign up</span>
+                <span>{links[4].title}</span>
               </Link>
             </span>
           </div>
