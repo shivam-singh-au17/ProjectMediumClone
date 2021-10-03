@@ -1,0 +1,38 @@
+.navBarSection2 {
+  height: 58px;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0px;
+}
+
+.navBar {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftNavSec {
+  width: 30%;
+}
+
+.leftNavSec img {
+  position: relative;
+  width: 50.93px;
+  height: 100%;
+  top: 14px;
+}
+
+.leftNavSec span {
+  position: relative;
+  left: 4px;
+  top: 20px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.06em;
+  color: #000000;
+}

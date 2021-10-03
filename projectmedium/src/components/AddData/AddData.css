@@ -212,3 +212,54 @@
   outline: none;
   margin-right: 120px;
 }
+
+.myOptionsSec {
+  border-top: 1px solid rgb(158, 158, 158);
+}
+
+.LinkOneBox {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+#myFirst {
+  margin-top: 3px;
+}
+
+#myFirst2 {
+  margin-top: 20px;
+}
+
+.myAllLinkOpt {
+  line-height: 20px;
+  font-size: 16px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin: 18px 0px;
+}
+
+.myLinkOne {
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+}
+
+.myLinkOne:hover {
+  color: rgb(0, 0, 0);
+}
+
+.memberBtn {
+  color: #1a8917;
+}
+
+.memberBtn:hover {
+  color: #1a8917;
+}
+
+.myFlexBoxLink {
+  display: flex;
+}
+
+.footerLink {
+  position: relative;
+  top: 3px;
+}

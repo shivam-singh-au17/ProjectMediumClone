@@ -2,9 +2,16 @@ import React from "react";
 import GoogleLogin from "react-google-login";
 import "./Signup.css";
 import { Redirect } from "react-router-dom";
+import { NavBar } from "./NavBar";
+import plus2 from "../Image/plus2.png";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContexts } from "../../Contexts/ThemeContexts";
+
 
 export const Signup = () => {
   const [isAuth, setIsAuth] = React.useState(true);
+  const { handleChangeTheme } = useContext(ThemeContexts);
 
   const responseGoogle = (response) => {
     console.log(response);
@@ -12,10 +19,17 @@ export const Signup = () => {
     console.log(res);
     setIsAuth(false);
   };
-
   return isAuth ? (
     <div>
+      <NavBar />
       <div className="signup-box">
+        <Link
+          onClick={() => handleChangeTheme(1)}
+          style={{ textDecoration: "none" }}
+          to={`/`}
+        >
+          <img className="cutBoxImg" src={plus2} alt="" />
+        </Link>
         <div className="signup-title">Welcome to Medium</div>
 
         <div className="signup-google">

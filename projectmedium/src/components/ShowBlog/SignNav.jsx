@@ -22,22 +22,22 @@ const links = [
   },
 ];
 
-export const SignNav = () => {
+export const SignNav = (props) => {
   return (
-    <div className="navbar">
+    <div className="navbar22">
       <div className="navbar-inner">
         <Link to={links[0].to} style={{ textDecoration: "none" }}>
           <div className="navbar-inner-left">
             <div className="navbar-inner-left-image">
               <img alt="" src={logo} />
             </div>
-            <div className="navbar-inner-left-text">Medium</div>
+            <div className="navbar-inner-left-text ms-2">{props.name}</div>
           </div>
         </Link>
         <div className="navbar-inner-right">
           <Link to={links[1].to}>
             <div className="navbar-inner-right-add">
-              <img alt="" src={addPlus} />
+              
             </div>
           </Link>
           <div className="navbar-inner-right-search">
