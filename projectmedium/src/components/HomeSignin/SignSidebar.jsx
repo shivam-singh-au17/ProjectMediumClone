@@ -160,7 +160,7 @@ export const SignSidebar = () => {
             See your full reading list
           </div>
 
-          <hr className="right-sidebar" />
+          
 
           <div class="allspanTag2">
             <span>Help </span>

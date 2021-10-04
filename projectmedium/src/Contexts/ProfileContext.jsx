@@ -7,7 +7,7 @@ const ProfileContext = ({ children }) => {
   const [profileimage, setImage] = React.useState("https://lh3.googleusercontent.com/a-/AOh14GiU9Lq96z4H6aK2POZLJmo8pfmaV6ItuChBsjkOGv0=s96-c");
   const [email, setEmail] = React.useState("beheraasutosh132@gmail.com")
   const handleLogin = (username) => {
-    setName(username.givenName);
+    setName(username.name);
     setImage(username.imageUrl);
     setEmail(username.email);
   };

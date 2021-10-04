@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 import "./AddData.css";
 import logo from "../Image/logo.svg";
 import ringing from "../Image/ringing.png";
@@ -6,8 +6,14 @@ import more from "../Image/more.png";
 import plus from "../Image/plus.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { AppContext } from "../../Contexts/ProfileContext";
+
+
+
 
 export default class AddData extends Component {
+
+  
   constructor(props) {
     super(props);
 
@@ -52,10 +58,13 @@ export default class AddData extends Component {
   onSubmit(e) {
     e.preventDefault();
 
+
+
+
     const newperson = {
-      userName: "Shivam Singh",
+      userName: "Asutosh",
       userProPic:
-        "https://lh3.googleusercontent.com/ogw/ADea4I7SAtyYDmQhsAzltqchX0c0evEsDi6eTVNxwLE_yxA=s32-c-mo",
+        "https://avatars.githubusercontent.com/u/86410005?v=4",
       userSubName: "Masai School",
       userTitle: this.state.userTitle,
       userSubTitle: this.state.userSubTitle,
@@ -80,7 +89,13 @@ export default class AddData extends Component {
     // });
   }
 
+  
+
   render() {
+
+     //console.log(this.context);
+     const {name, email, profileimage} = this.context;
+
     return (
       <>
         <form onSubmit={this.onSubmit}>
@@ -90,7 +105,7 @@ export default class AddData extends Component {
                 <div className="leftSection">
                   <img src={logo} alt="" />
                   <span className="ms-2">Draft in </span>
-                  <span>Shivam Singh</span>
+                  <span>{name}</span>
                 </div>
               </Link>
               <div>
@@ -142,7 +157,7 @@ export default class AddData extends Component {
                 >
                   <img
                     className="profile"
-                    src="https://cdn-images-1.medium.com/fit/c/35/35/0*EWs9dkB9i9yar9-3"
+                    src={profileimage}
                     alt=""
                   />
                 </span>
@@ -158,12 +173,12 @@ export default class AddData extends Component {
                     <div id="offcanvasRightLabel" className="d-flex p-1">
                       <img
                         className="profile myImg"
-                        src="https://cdn-images-1.medium.com/fit/c/35/35/0*EWs9dkB9i9yar9-3"
+                        src={profileimage}
                         alt=""
                       />
                       <div className="ms-3">
-                        <div className="fs-5">Shivam Singh</div>
-                        <div className="">@shivamsingh4458</div>
+                        <div className="fs-5">{name}</div>
+                        <div className="">{email}</div>
                       </div>
                     </div>
                     <button
@@ -295,3 +310,5 @@ export default class AddData extends Component {
     );
   }
 }
+
+AddData.contextType = AppContext;
