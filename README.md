@@ -101,7 +101,7 @@ npm start
 **These challenges improve our abilities to be a good Team Player and finally we did the constitution of all the problems together and made our perfect project.**
 
 # Team members and contributors
-- By following a well-structured way, all of us successfully completed our responsibilities before the given time. The members of team MEDIUM are-
+By following a well-structured way, all of us successfully completed our responsibilities before the given time. The members of team MEDIUM are-
 
 #### 1. Asutosh Behera
 **Github:**  [asutoshb](https://github.com/asutoshb) 
