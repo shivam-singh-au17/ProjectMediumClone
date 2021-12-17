@@ -25,6 +25,7 @@ cd projectmedium
 npm start
 ```
 
+
 # Our Agendas - 
 * Breaking the whole work into the smallest divisions according to our strong zone.
 * Setting up the deadline for every individual.
@@ -107,6 +108,7 @@ npm start
 **Github:**  [asutoshb](https://github.com/asutoshb) 
 #### 2. Naveen Kumar
 **Github:**  [Naveenverma440](https://github.com/Naveenverma440) 
+
 
 # Conclusion
 - I would like to thank, all of my team members, Asutosh Behera and Naveen Kumar for their contribution. 
