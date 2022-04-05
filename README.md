@@ -15,6 +15,9 @@ git clone https://github.com/shivam-singh-au17/ProjectMediumClone
 cd backendfile
 ```
 ```
+npm install
+```
+```
 nodemon server.js
 ```
 ### And then open second Git Bash terminal and then enter these two commands manually in this terminal.  
