@@ -25,6 +25,9 @@ nodemon server.js
 cd projectmedium
 ```
 ```
+npm install
+```
+```
 npm start
 ```
 
