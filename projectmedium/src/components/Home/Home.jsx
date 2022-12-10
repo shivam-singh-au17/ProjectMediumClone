@@ -13,13 +13,15 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useContext } from "react";
 import { ThemeContexts } from "../../Contexts/ThemeContexts";
+import { BASE_URL } from "../../env";
+
 
 const Home = () => {
   const [addTask, setAddTask] = useState([]);
   const { handleChangeTheme } = useContext(ThemeContexts);
 
   function getMyTodos() {
-    axios.get(`http://localhost:5000/blogsdata/`).then((res) => {
+    axios.get(`${BASE_URL}`).then((res) => {
       setAddTask(res.data);
     });
   }

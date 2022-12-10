@@ -10,6 +10,7 @@ import linkedin2 from "../Image/linkedin2.png";
 import twt2 from "../Image/twt2.png";
 import facebook from "../Image/facebook.png";
 import { SignNav } from "./SignNav";
+import { BASE_URL } from "../../env";
 
 const ShowBlog = () => {
   const { userId } = useParams();
@@ -18,7 +19,7 @@ const ShowBlog = () => {
   // const history = useHistory();
 
   function getUsersDetailes() {
-    fetch(`http://localhost:5000/blogsdata/${userId}`)
+    fetch(`${BASE_URL}${userId}`)
       .then((data) => data.json())
       .then((data) => {
         setUsers(data);

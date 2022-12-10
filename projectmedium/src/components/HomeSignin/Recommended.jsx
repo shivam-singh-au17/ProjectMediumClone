@@ -5,13 +5,14 @@ import { useContext } from "react";
 import { ThemeContexts } from "../../Contexts/ThemeContexts";
 import save from "../Image/save.svg";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "../../env";
 
 export const Recommended = () => {
   const [addTask, setAddTask] = useState([]);
   const { handleChangeTheme } = useContext(ThemeContexts);
 
   function getMyTodos() {
-    axios.get(`http://localhost:5000/blogsdata/`).then((res) => {
+    axios.get(`${BASE_URL}`).then((res) => {
       setAddTask(res.data);
     });
   }

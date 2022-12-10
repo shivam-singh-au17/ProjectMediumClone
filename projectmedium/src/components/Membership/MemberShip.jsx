@@ -125,7 +125,7 @@ const MemberShip = () => {
           <img
             src="https://cdn-static-1.medium.com/sites/medium.com/membership/images/Membership_Footer.svg"
             alt=""
-            srcset=""
+            srcSet=""
           />
         </div>
       </div>

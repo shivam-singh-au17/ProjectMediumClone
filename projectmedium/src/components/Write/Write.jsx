@@ -35,7 +35,7 @@ const Write = () => {
           <div className="col">
             <div className="img-left-first">
               {" "}
-              <img src={face} alt="" srcset="" width="400px" height="550px" />
+              <img src={face} alt="" srcSet="" width="400px" height="550px" />
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ const Write = () => {
           <img
             src="https://cdn-static-1.medium.com/sites/medium.com/creators/images/earn_kelly_kaki.png"
             alt=""
-            srcset=""
+            srcSet=""
             width="600px"
             height="550px"
           />

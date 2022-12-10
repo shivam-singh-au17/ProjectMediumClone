@@ -162,7 +162,7 @@ export const SignSidebar = () => {
 
           <hr className="right-sidebar" />
 
-          <div class="allspanTag2">
+          <div className="allspanTag2">
             <span>Help </span>
             <span> Status </span>
             <span> Writers </span>

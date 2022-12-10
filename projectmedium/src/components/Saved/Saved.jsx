@@ -17,7 +17,7 @@ export const Saved = () => {
           <div>
             <Link
               style={{ textDecoration: "none", color: "#292929" }}
-              to="/home/list"
+              to="/home/list/saveditems"
             >
               Saved
             </Link>
@@ -25,7 +25,7 @@ export const Saved = () => {
           <div className="mx-3">
             <Link
               style={{ textDecoration: "none", color: "#292929" }}
-              to="/home/list"
+              to="/home/list/highlights"
             >
               Highlights
             </Link>
@@ -33,7 +33,7 @@ export const Saved = () => {
           <div>
             <Link
               style={{ textDecoration: "none", color: "#292929" }}
-              to="/home/list"
+              to="/home/list/recent"
             >
               Recently Viewed
             </Link>
@@ -42,18 +42,20 @@ export const Saved = () => {
 
         <hr className="saved-hr" />
 
-        <Switch>
-          <SavedItems />
-          <Route path="/saved" exact>
+        <div>
+          {/* <Switch> */}
             <SavedItems />
-          </Route>
-          <Route path="/highlights" exact>
-            <Highlights />
-          </Route>
-          <Route path="/recent" exact>
-            <Recent />
-          </Route>
-        </Switch>
+            <Route path="/home/list/saveditems" exact>
+              <SavedItems />
+            </Route>
+            <Route path="/home/list/highlights" exact>
+              <Highlights />
+            </Route>
+            <Route path="/home/list/recent" exact>
+              <Recent />
+            </Route>
+          {/* </Switch> */}
+        </div>
       </div>
     </div>
   );

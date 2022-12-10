@@ -8,16 +8,16 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContexts } from "../../Contexts/ThemeContexts";
 
-
 export const Signup = () => {
   const [isAuth, setIsAuth] = React.useState(true);
   const { handleChangeTheme } = useContext(ThemeContexts);
 
   const responseGoogle = (response) => {
-    console.log(response);
     var res = response.profileObj;
-    console.log(res);
-    setIsAuth(false);
+    // console.log(res);
+    if (res.googleId.length === 21) {
+      setIsAuth(false);
+    }
   };
   return isAuth ? (
     <div>

@@ -4,7 +4,6 @@ import logo from "../Image/logo.svg";
 import save from "../Image/save.png";
 import ringing from "../Image/ringing.png";
 import search from "../Image/search.png";
-import addPlus from "../Image/addPlus.png";
 import { Link } from "react-router-dom";
 
 const links = [
@@ -20,25 +19,29 @@ const links = [
     to: "/home/list",
     title: "Saved",
   },
+  {
+    to: "/",
+    title: "Saved",
+  },
 ];
 
 export const SignNav = (props) => {
   return (
     <div className="navbar22">
       <div className="navbar-inner">
-        <Link to={links[0].to} style={{ textDecoration: "none" }}>
-          <div className="navbar-inner-left">
-            <div className="navbar-inner-left-image">
+        <div className="navbar-inner-left">
+          <div className="navbar-inner-left-image">
+            <Link to={links[3].to} style={{ textDecoration: "none" }}>
               <img alt="" src={logo} />
-            </div>
-            <div className="navbar-inner-left-text ms-2">{props.name}</div>
+            </Link>
           </div>
-        </Link>
+          <Link to={links[0].to} style={{ textDecoration: "none" }}>
+            <div className="navbar-inner-left-text ms-2">{props.name}</div>
+          </Link>
+        </div>
         <div className="navbar-inner-right">
           <Link to={links[1].to}>
-            <div className="navbar-inner-right-add">
-              
-            </div>
+            <div className="navbar-inner-right-add"></div>
           </Link>
           <div className="navbar-inner-right-search">
             <img alt="" src={search} />
@@ -62,26 +65,26 @@ export const SignNav = (props) => {
             </span>
 
             <div
-              class="modal fade"
+              className="modal fade"
               id="exampleModal"
-              tabindex="-1"
+              tabIndex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel">
                       Notifications
                     </h5>
                     <button
                       type="button"
-                      class="btn-close"
+                      className="btn-close"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body" style={{ fontWeight: "500" }}>
+                  <div className="modal-body" style={{ fontWeight: "500" }}>
                     You're all caught up.
                     <span
                       style={{

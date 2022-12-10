@@ -6,6 +6,7 @@ import more from "../Image/more.png";
 import plus from "../Image/plus.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { BASE_URL } from "../../env";
 
 export default class AddData extends Component {
   constructor(props) {
@@ -68,8 +69,10 @@ export default class AddData extends Component {
       userBImg02: "https://picsum.photos/200",
     };
 
+    
+
     axios
-      .post("http://localhost:5000/blogsdata/add", newperson)
+      .post(`${BASE_URL}add`, newperson)
       .then((res) => console.log(res.data));
 
     // this.setState({
